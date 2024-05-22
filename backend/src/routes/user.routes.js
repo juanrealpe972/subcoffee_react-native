@@ -5,7 +5,7 @@ import { validationRegisterUser } from "../validations/user.validation.js";
 
 const routerUser = Router();
 
-routerUser.get("/users", verificarUserToken, getUsers);
+routerUser.get("/users", getUsers);
 routerUser.get("/users/:id", verificarUserToken, getUser);
 routerUser.post("/users", verificarUserToken, validationRegisterUser, createUser);
 routerUser.post("/usersimg", verificarUserToken, cargarImagen, createImagenUser);

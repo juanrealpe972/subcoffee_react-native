@@ -1,10 +1,15 @@
-import { View, Text } from 'react-native'
+import { Text, View } from 'react-native'
 import React from 'react'
+import ListaSeleccionEstatica from './components/ListaSeleccionEstatica'
+import ListaSeleccionApi from './components/ListaSeleccionApi'
 
 const App = () => {
   return (
     <View>
-      <Text>App</Text>
+      <Text>Lista Estatica</Text>
+      <ListaSeleccionEstatica/>
+      <Text>Lista desde API</Text>
+      <ListaSeleccionApi/>
     </View>
   )
 }
